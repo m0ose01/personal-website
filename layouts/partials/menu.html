@@ -11,7 +11,7 @@ Renders a menu for the given menu ID.
 {{- $menuID := .menuID }}
 
 {{- with index site.Menus $menuID }}
-  <nav class="bg-stone-200 p-2 rounded-md">
+  <nav class="bg-neutral-200 p-2 rounded-md">
     <ul class="flex justify-evenly">
       {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
     </ul>
@@ -34,7 +34,7 @@ Renders a menu for the given menu ID.
       {{- end }}
     {{- end }}
     <li class="p-1">
-      <a class="text-inherit! hover:text-stone-100!"
+      <a class="text-inherit! hover:text-neutral-100!"
         {{- range $k, $v := $attrs }}
           {{- with $v }}
             {{- printf " %s=%q" $k $v | safeHTMLAttr }}
