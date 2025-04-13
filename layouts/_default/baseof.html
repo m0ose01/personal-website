@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}" class="font-sans">
 <head>
   {{ partial "head.html" . }}
   {{ partial "css.html" . }}
 </head>
-<body>
-  <header>
+<body class="bg-stone-100">
+  <header class="rounded-md sticky top-0">
     {{ partial "header.html" . }}
   </header>
-  <main>
+  <main class="mx-auto max-w-3xl bg-stone-200 p-6 m-6 rounded-md">
     {{ block "main" . }}{{ end }}
   </main>
-  <footer>
+  <footer class="text-center p-2">
     {{ partial "footer.html" . }}
   </footer>
 </body>
