@@ -1,7 +1,12 @@
 {{ define "main" }}
+<article class="prose prose-neutral">
+
   {{ .Content }}
   {{ range site.RegularPages }}
-    <h2 class="text-xl"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+  <section class="m-auto bg-neutral-200 prose prose-sm prose-neutral p-2 my-4 rounded-md">
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
     {{ .Summary }}
+  </section>
   {{ end }}
+</article>
 {{ end }}

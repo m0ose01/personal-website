@@ -6,9 +6,9 @@
       "tailwindcss": "project"
     }
   },
-  "dependencies": {},
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.3",
+    "@tailwindcss/typography": "^0.5.16",
     "tailwindcss": "^4.1.3"
   }
 }
