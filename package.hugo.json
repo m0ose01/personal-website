@@ -1,6 +1,14 @@
 {
+  "comments": {
+    "dependencies": {},
+    "devDependencies": {
+      "@tailwindcss/cli": "project",
+      "tailwindcss": "project"
+    }
+  },
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.3",
+    "@tailwindcss/typography": "^0.5.16",
     "tailwindcss": "^4.1.3"
   }
 }
