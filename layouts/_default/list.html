@@ -1,10 +1,10 @@
 {{ define "main" }}
-  <article class="prose prose-neutral">
+  <article class="prose prose-neutral dark:prose-invert">
   <h1>{{ .Title }}</h1>
   {{ .Content }}
   {{ range .Pages }}
-  <div class="m-auto bg-neutral-200 p-2 my-4 rounded-md max-h-80 overflow-clip">
-    <section class="prose prose-sm prose-neutral p-2">
+  <div class="m-auto bg-neutral-200 dark:bg-neutral-800 p-2 my-4 rounded-md max-h-80 overflow-clip">
+    <section class="prose prose-sm prose-neutral p-2 dark:prose-invert">
     <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
     {{ .Summary }}
     </section>
