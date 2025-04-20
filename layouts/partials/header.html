@@ -1,2 +1,6 @@
-<h1 class="text-3xl text-center p-2">{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<div id="header-start" class="flex-1"><h1 class="text-3xl text-center p-2">{{ site.Title }}</h1></div>
+<div id="header-centre" class="flex-2 flex justify-between">
+	{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+</div>
+<div id="header-end" class="flex-1 flex justify-center items-center">
+</div>
