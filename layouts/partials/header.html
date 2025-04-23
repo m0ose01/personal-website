@@ -1,4 +1,4 @@
-<div id="header-start" class="flex-1"><h1 class="text-3xl text-center p-2"><a href="/">{{ site.Title }}</a></h1></div>
+<div id="header-start" class="flex-1"><h1 class="text-3xl text-center p-2"><a href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a></h1></div>
 <div id="header-centre" class="flex-2 flex justify-between">
 	{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
 	<button id="modetoggle" class="p-2 cursor-pointer">
