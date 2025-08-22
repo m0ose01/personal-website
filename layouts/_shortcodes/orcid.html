@@ -1,0 +1,8 @@
+{{ with resources.Get "images/ORCID-iD_icon_vector.svg" }}
+<div class="flex justify-start items-center">
+	<img src="{{ .RelPermalink }}" alt="ORCID iD" class="m-1"/>
+	<a href="https://orcid.org/{{ $.Site.Params.orcid }}" aria-label="View ORCID record" class="m-1">
+		https://orcid.org/{{ $.Site.Params.orcid }}
+	</a>
+</div>
+{{ end }}
